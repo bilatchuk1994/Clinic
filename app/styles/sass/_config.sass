@@ -235,3 +235,23 @@ h4
 		&:focus, &:active
 			background: #722DA9
 			color: rgba(255, 255, 255, 0.75)
+
+.breadcrums
+	display: flex
+	list-style: none
+	margin-bottom: 1px
+
+	li
+		line-height: 21px
+		@media screen and ( max-width: $md1+px )
+			font-size: 16px
+
+		&:not(:last-child)
+			margin-right: 5px
+
+		a
+			color: rgba(0, 0, 0, 0.75)
+			line-height: 21px
+
+			&:hover, &:focus, &:active
+				color: #9b69c3

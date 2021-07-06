@@ -47,6 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	});
 
+	var swiper2 = new Swiper(".services-swiper", {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: false,
+		pagination: {
+			el: ".services-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".services-next",
+			prevEl: ".services-prev",
+		},
+		breakpoints: {
+			640: {
+				slidesPerView: 1,
+				spaceBetween: 30,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+		},
+	});
+
 	function damaxToggleMenu() {
 		$(".burger").click(function () {
 			$(this).toggleClass("on");
