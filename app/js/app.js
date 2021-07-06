@@ -6,6 +6,8 @@ window.$ = $
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
+import Swiper from 'swiper/bundle';
+
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -54,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+
+	$(".faq-title").on("click", function () {
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(this).siblings(".faq-content").slideUp(200);
+		} else {
+			$(".faq-title").removeClass("active");
+			$(this).addClass("active");
+			$(".faq-content").slideUp(200);
+			$(this).siblings(".faq-content").slideDown(200);
+		}
+	});
 
 	$('.svg-image').each((i, e) => {
 		var $img = $(e);

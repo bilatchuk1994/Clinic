@@ -13,6 +13,9 @@
     justify-content: center
     align-items: center
     margin-top: 0
+    @media screen and ( max-width: $md4+px )
+      height: 40px
+      width: 40px
 
     &:after
       display: none
@@ -21,6 +24,9 @@
     position: initial
     height: 20px
     margin: 0 20px
+    @media screen and ( max-width: $md4+px )
+      height: 18px
+      margin: 0 10px
 
     &-bullet
       width: 20px
@@ -30,6 +36,10 @@
       background: #fff
       opacity: 1
       margin: 0 10px
+      @media screen and ( max-width: $md4+px )
+        height: 18px
+        width: 18px
+        margin: 0 6px
 
       &-active
         background: #9B69C3

@@ -1,13 +1,29 @@
 .review
-  padding: 171px 0 0
+  padding-top: 171px
   margin-bottom: -30px
   overflow: hidden
+  @media screen and ( max-width: $md2+px )
+    padding-top: 132px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 111px
 
   h2
     margin-bottom: 0px
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 3px
 
   h4
     margin-bottom: 0
+    @media screen and ( max-width: $md2+px )
+      line-height: 48px
+      margin-bottom: 29px
+    @media screen and ( max-width: $md4+px )
+      line-height: 32px
+      margin-bottom: 23px
+
+  .slider-control
+    @media screen and ( max-width: $md2+px )
+      justify-content: flex-start
 
   &-swiper
     overflow: visible
@@ -27,24 +43,42 @@
     align-items: stretch
     overflow: hidden
     height: 100%
+    @media screen and ( max-width: $md3+px )
+      flex-direction: column-reverse
 
     h3
       font-weight: bold
       font-size: 30px
       margin-bottom: 5px
+      @media screen and ( max-width: $md4+px )
+        font-size: 20px
+        margin-bottom: 0
 
     .review-age
       font-weight: 300
       font-size: 18px
       color: rgba(0, 0, 0, 0.75)
       margin-bottom: 28px
+      @media screen and ( max-width: $md4+px )
+        font-size: 16px
+        margin-bottom: 18px
 
     p
       margin-bottom: 0
+      @media screen and ( max-width: $md4+px )
+        line-height: 25px
 
   &-img
     width: 321px
     flex-shrink: 0
+    @media screen and ( max-width: $md2+px )
+      width: 289px
+    @media screen and ( max-width: $md3+px )
+      width: 100%
 
   &-info
     padding: 32px 59px 40px 36px
+    @media screen and ( max-width: $md2+px )
+      padding: 31px 71px 33px 24px
+    @media screen and ( max-width: $md4+px )
+      padding: 16px 12px 36px
