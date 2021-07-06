@@ -1,5 +1,17 @@
 .course
   padding-top: 187px
+  @media screen and ( max-width: $md2+px )
+    padding-top: 162px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 141px
+
+  .row
+    @media screen and ( max-width: $md2+px )
+      justify-content: flex-end
 
   h4
     line-height: 48px
+
+  p
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 32px

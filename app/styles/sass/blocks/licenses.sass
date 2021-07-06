@@ -1,12 +1,37 @@
 .licenses
   padding-top: 187px
+  @media screen and ( max-width: $md2+px )
+    padding-top: 162px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 141px
 
   h4
     text-align: center
     margin-bottom: 39px
+    @media screen and ( max-width: $md2+px )
+      text-align: left
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 25px
 
   &-img
     margin-bottom: 38px
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 44px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 59px
 
     img
+      width: 100%
+
+  &-row
+
+    .col-lg-4:last-child
+      @media screen and ( max-width: $md2+px )
+        display: none
+    .col-lg-4:nth-last-child(2)
+      @media screen and ( max-width: $md4+px )
+        display: none
+
+  .btn
+    @media screen and ( max-width: $md4+px )
       width: 100%

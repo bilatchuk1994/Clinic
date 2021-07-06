@@ -1,10 +1,20 @@
 .text-left
   padding-top: 187px
   overflow: hidden
+  @media screen and ( max-width: $md2+px )
+    padding-top: 162px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 141px
 
   .container
-    padding: 112px 0 113px
+    padding: 112px 20px 113px
     position: relative
+    @media screen and ( max-width: $md2+px )
+      padding: 68px 20px 36px
+    @media screen and ( max-width: $md3+px )
+      background: #9B69C3
+    @media screen and ( max-width: $md4+px )
+      padding: 58px 15px 28px
 
     &::before
       content: ""
@@ -15,10 +25,31 @@
       right: 209px
       background: #9B69C3
       border-radius: 0px 10px 10px 0px
+      @media screen and ( max-width: $md2+px )
+        right: auto
+        left: 234px
+        border-radius: 10px 0px 0px 10px
+
+  .row
+    @media screen and ( max-width: $md2+px )
+      align-items: flex-end
+      flex-direction: column
 
   p
     color: rgba(255, 255, 255, 0.75)
     margin-bottom: 0
+    text-align: justify
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 32px
+
+  .mob-text
+
+    p
+      @media screen and ( max-width: $md4+px )
+        font-size: 18px
+        line-height: 28px
 
 .text-bottom
   padding-top: 119px
+  @media screen and ( max-width: $md2+px )
+    padding-top: 93px

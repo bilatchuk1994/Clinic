@@ -1,5 +1,15 @@
 .price
-  padding: 187px 0 0
+  padding-top: 187px
+  @media screen and ( max-width: $md2+px )
+    padding-top: 162px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 141px
+
+  h4
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 51px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 35px
 
   &-title
     display: flex
@@ -9,21 +19,43 @@
     padding-bottom: 5px
     padding-top: 3px
     margin-bottom: 34px
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 39px
+    @media screen and ( max-width: $md4+px )
+      padding-bottom: 6px
+      margin-bottom: 28px
 
     h3
       font-weight: 600
       font-size: 24px
       line-height: 26px
+      @media screen and ( max-width: $md4+px )
+        font-size: 18px
+        line-height: 19px
+
+      span
+        @media screen and ( max-width: $md4+px )
+          display: none
 
   &-block
     display: flex
     justify-content: space-between
     align-items: center
     margin-bottom: 36px
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 40px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 30px
 
     p
       color: #000000
       margin-bottom: 0
+      @media screen and ( max-width: $md2+px )
+        font-size: 24px
+        line-height: 26px
+      @media screen and ( max-width: $md4+px )
+        font-size: 16px
+        line-height: 17px
 
       &:last-child
         flex-shrink: 0
@@ -31,3 +63,8 @@
 
   .btn
     margin-top: 15px
+    @media screen and ( max-width: $md2+px )
+      margin-top: 21px
+    @media screen and ( max-width: $md4+px )
+      margin-top: 23px
+      width: 100%

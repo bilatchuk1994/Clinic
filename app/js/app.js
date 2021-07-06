@@ -2,12 +2,6 @@ import $ from 'jquery'
 window.jQuery = $
 window.$ = $
 
-let owl_carousel = require('owl.carousel');
-
-let magnific = require('magnific-popup');
-
-let inputmask = require('inputmask');
-
 
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
@@ -37,30 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
 	damaxRegister();
 
 
-	// function stickyHeader() {
-	// 	if ($(window).scrollTop() > 0) {
-	// 		$('.header').addClass("header-sticky");
-	// 	} else {
-	// 		$('.header').removeClass("header-sticky");
-	// 	}
-
-	// 	if ($(window).scrollTop() > $(".home .banner").outerHeight()) {
-	// 		$('.home .header').addClass("header-sticky");
-	// 	} else {
-	// 		$('.home .header').removeClass("header-sticky");
-	// 	}
-
-	// 	if (jQuery(window).width() < 992) {
-
-	// 		if ($(window).scrollTop() > 0) {
-	// 			$('.home .header').addClass("header-sticky");
-	// 		} else {
-	// 			$('.home .header').removeClass("header-sticky");
-	// 		}
-
-	// 	}
-
-	// }
+	var swiper = new Swiper(".review-swiper", {
+		slidesPerView: 1,
+		spaceBetween: 31,
+		loop: false,
+		pagination: {
+			el: ".review-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".review-next",
+			prevEl: ".review-prev",
+		},
+	});
 
 	function damaxToggleMenu() {
 		$(".burger").click(function () {
