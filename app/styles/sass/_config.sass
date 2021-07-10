@@ -18,6 +18,7 @@ $md3: 767.98
 $md4: 479.98
 
 // IMPORT SECTION
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:600,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700);
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
@@ -240,11 +241,17 @@ h4
 	display: flex
 	list-style: none
 	margin-bottom: 1px
+	flex-wrap: wrap
 
 	li
 		line-height: 21px
 		@media screen and ( max-width: $md1+px )
 			font-size: 16px
+		@media screen and ( max-width: $md2+px )
+			font-size: 18px
+		@media screen and ( max-width: $md4+px )
+			font-size: 16px
+			line-height: 19px
 
 		&:not(:last-child)
 			margin-right: 5px
@@ -255,3 +262,6 @@ h4
 
 			&:hover, &:focus, &:active
 				color: #9b69c3
+
+.menu_expand
+	overflow: hidden

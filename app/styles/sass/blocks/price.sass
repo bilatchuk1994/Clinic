@@ -6,10 +6,16 @@
     padding-top: 141px
 
   h4
+    margin-bottom: 32px
     @media screen and ( max-width: $md2+px )
       margin-bottom: 51px
     @media screen and ( max-width: $md4+px )
       margin-bottom: 35px
+    @media screen and ( max-width: $md3+px )
+      margin-bottom: 22px
+
+  p
+    text-align: justify
 
   &-title
     display: flex
@@ -36,6 +42,21 @@
       span
         @media screen and ( max-width: $md4+px )
           display: none
+
+  &-flex
+    @media screen and ( max-width: $md2+px )
+      display: flex
+      flex-wrap: wrap
+      margin: 0 -15px 36px
+
+    > div
+      @media screen and ( max-width: $md2+px )
+        max-width: 50%
+        flex-basis: 50%
+        padding: 0 15px
+      @media screen and ( max-width: $md3+px )
+        flex-basis: 100%
+        max-width: 100%
 
   &-block
     display: flex
@@ -68,3 +89,6 @@
     @media screen and ( max-width: $md4+px )
       margin-top: 23px
       width: 100%
+
+.offering-price
+  padding-top: 40px

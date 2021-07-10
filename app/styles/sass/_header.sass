@@ -1,1 +1,466 @@
+.header
+  padding: 40px 0 42px
+  position: relative
+  @media screen and ( max-width: $md2+px )
+    padding: 32px 0 41px
+  @media screen and ( max-width: $md3+px )
+    padding: 29px 0 14px
 
+  .hide-mob
+    @media screen and ( max-width: $md3+px )
+      display: none
+
+  .row
+    @media screen and ( max-width: $md3+px )
+      align-items: center
+
+  .logo
+    text-align: center
+    @media screen and ( max-width: $md2+px )
+      text-align: left
+      margin-bottom: 10px
+    @media screen and ( max-width: $md3+px )
+      margin-bottom: 0
+
+    h3
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      margin-bottom: 0
+      @media screen and ( max-width: $md2+px )
+        margin-bottom: 2px
+      @media screen and ( max-width: $md3+px )
+        font-size: 18px
+        line-height: 22px
+
+    p
+      @media screen and ( max-width: $md1+px )
+        font-size: 16px
+      @media screen and ( max-width: $md2+px )
+        font-size: 18px
+      @media screen and ( max-width: $md3+px )
+        font-size: 16px
+        line-height: 19px
+        margin-bottom: 0
+
+  .phone
+    text-align: right
+    @media screen and ( max-width: $md3+px )
+      text-align: left
+
+    a
+      font-family: "Montserrat Alternates", sans-serif
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      color: #63A1BC
+      display: inline-block
+      margin-bottom: 0
+      @media screen and ( max-width: $md2+px )
+        font-size: 18px
+        line-height: 22px
+      @media screen and ( max-width: $md3+px )
+        font-size: 16px
+        line-height: 20px
+
+      &:hover
+        color: #9b69c3
+
+    p
+      margin-top: -2px
+      margin-bottom: 0
+      @media screen and ( max-width: $md1+px )
+        font-size: 16px
+      @media screen and ( max-width: $md2+px )
+        font-size: 18px
+      @media screen and ( max-width: $md3+px )
+        font-size: 16px
+
+  .address
+
+    h3
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 0
+      @media screen and ( max-width: $md3+px )
+        font-size: 16px
+        line-height: 20px
+
+    p
+      @media screen and ( max-width: $md1+px )
+        font-size: 16px
+      @media screen and ( max-width: $md2+px )
+        font-size: 18px
+      @media screen and ( max-width: $md3+px )
+        font-size: 16px
+        margin-bottom: 8px
+
+  &-flex
+    display: flex
+    @media screen and ( max-width: $md2+px )
+      flex-direction: column
+      margin-top: 56px
+
+    .time-group
+      margin-left: 36px
+      margin-bottom: 0
+      @media screen and ( max-width: $md1+px )
+        margin-left: 20px
+      @media screen and ( max-width: $md2+px )
+        margin-left: 0
+      @media screen and ( max-width: $md3+px )
+        margin-bottom: 16px
+
+      ul
+        list-style: none
+
+        li
+          margin-bottom: 0
+          @media screen and ( max-width: $md1+px )
+            font-size: 16px
+          @media screen and ( max-width: $md2+px )
+            font-size: 18px
+            margin-bottom: 7px
+          @media screen and ( max-width: $md3+px )
+            font-size: 16px
+            line-height: 19px
+
+  .watch-flex
+    justify-content: flex-end
+    @media screen and ( max-width: $md2+px )
+      justify-content: flex-start
+    @media screen and ( max-width: $md3+px )
+      margin: 27px 0 0
+
+  .watch
+    font-weight: 300
+    font-size: 18px
+    line-height: 21px
+    color: #FF9981
+    @media screen and ( max-width: $md1+px )
+      font-size: 16px
+    @media screen and ( max-width: $md2+px )
+      font-size: 18px
+    @media screen and ( max-width: $md3+px )
+      font-size: 16px
+      line-height: 19px
+
+    &:hover
+      -webkit-text-stroke: 1px #9b69c3
+      color: #9b69c3
+
+  .nav-menu
+    @media screen and ( max-width: $md2+px )
+      display: none
+      position: fixed
+      height: calc( 100% - 185px )
+      background: #fff
+      width: 100%
+      z-index: 999
+      top: 185px
+      left: 0
+      padding: 0px 20px 20px
+      overflow-y: auto
+    @media screen and ( max-width: $md3+px )
+      top: 103px
+      height: calc( 100% - 103px )
+      padding: 0 15px 15px
+
+    ul.menu
+      display: flex
+      align-items: center
+      list-style: none
+      margin-bottom: 0
+      @media screen and ( max-width: $md2+px )
+        flex-direction: column
+        align-items: flex-start
+
+      li.has-child:hover .dropdown
+        visibility: visible
+        opacity: 1
+
+      li.has-child
+        position: relative
+
+        .dropdown
+          position: absolute
+          width: 380px
+          background: #FFFFFF
+          border-radius: 0px 0px 10px 10px
+          top: 69px
+          left: 0
+          z-index: 99
+          list-style: none
+          flex-direction: column
+          align-items: flex-start
+          padding: 34px 37px 41px
+          visibility: hidden
+          opacity: 0
+          transition: .2s linear
+          @media screen and ( max-width: $md2+px )
+            position: fixed
+            height: calc( 100% - 185px )
+            background: #fff
+            width: 100%
+            z-index: 999
+            top: 185px
+            left: -100%
+            overflow-y: auto
+            padding: 0 20px
+          @media screen and ( max-width: $md3+px )
+            top: 103px
+            height: calc( 100% - 103px )
+            padding: 0 15px
+
+          &:before
+            content: ""
+            height: 100px
+            top: -50px
+            width: 100%
+            position: absolute
+            left: 0
+
+            a
+
+          li
+            margin-right: 0
+
+            &:not(:last-child)
+              margin-bottom: 17px
+              @media screen and ( max-width: $md1+px )
+                margin-bottom: 10px
+
+            a
+              font-weight: 300
+              font-size: 18px
+              line-height: 21px
+              color: rgba(0, 0, 0, 0.75)
+              @media screen and ( max-width: $md1+px )
+                font-size: 16px
+
+            a:before
+              display: none
+
+          li.back-btn
+            margin-bottom: 18px
+            @media screen and ( max-width: $md3+px )
+              margin-bottom: 30px
+
+            a
+              display: flex
+              align-items: center
+              font-weight: bold
+              font-size: 30px
+              line-height: 46px
+              color: #63A1BC
+              @media screen and ( max-width: $md3+px )
+                font-size: 20px
+
+      li
+        &:not(:last-child)
+          margin-right: 52px
+          @media screen and ( max-width: $md1+px )
+            margin-right: 30px
+          @media screen and ( max-width: $md2+px )
+            margin-right: 0
+            margin-bottom: 32px
+          @media screen and ( max-width: $md3+px )
+            margin-bottom: 23px
+
+        .menu-block
+          position: fixed
+          top: 209px
+          left: 0
+          width: 100%
+          z-index: 99
+          background: #fff
+          padding: 20px 0 31px
+          display: none
+          @media screen and ( max-width: $md2+px )
+            height: calc( 100% - 185px )
+            background: #fff
+            width: 100%
+            z-index: 999
+            top: 185px
+            left: -100%
+            overflow-y: auto
+          @media screen and ( max-width: $md3+px )
+            top: 103px
+            height: calc( 100% - 103px )
+            padding: 0
+
+          &:before
+            content: ""
+            height: 100px
+            top: -50px
+            width: 100%
+            position: absolute
+            left: 0
+
+          h3
+            font-weight: 600
+            font-size: 24px
+            line-height: 37px
+            color: #63A1BC
+            margin-bottom: 18px
+            @media screen and ( max-width: $md1+px )
+              font-size: 20px
+            @media screen and ( max-width: $md2+px )
+              font-size: 24px
+            @media screen and ( max-width: $md3+px )
+              font-size: 18px
+              margin-bottom: 12px
+
+          ul
+            margin-bottom: 0
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            @media screen and ( max-width: $md2+px )
+              margin-bottom: 36px
+            @media screen and ( max-width: $md3+px )
+              margin-bottom: 39px
+
+            li
+              margin-bottom: 17px
+              list-style: none
+              @media screen and ( max-width: $md3+px )
+                margin-bottom: 14px
+
+            a
+              font-weight: 300
+              font-size: 18px
+              color: rgba(0, 0, 0, 0.75)
+              @media screen and ( max-width: $md1+px )
+                font-size: 16px
+              @media screen and ( max-width: $md2+px )
+                font-size: 18px
+              @media screen and ( max-width: $md3+px )
+                font-size: 16px
+
+              &::before
+                display: none
+
+        a
+          font-weight: 300
+          font-size: 18px
+          line-height: 21px
+          color: rgba(0, 0, 0, 0.75)
+          position: relative
+          @media screen and ( max-width: $md1+px )
+            font-size: 16px
+          @media screen and ( max-width: $md2+px )
+            font-size: 18px
+            line-height: 21px
+          @media screen and ( max-width: $md3+px )
+            font-size: 16px
+            line-height: 19px
+
+          &::before
+            content: ""
+            position: absolute
+            width: 0
+            height: 4px
+            background: #63A1BC
+            border-radius: 4px
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -19px
+            transition: .3s linear
+            @media screen and ( max-width: $md2+px )
+              bottom: -15px
+            @media screen and ( max-width: $md3+px )
+              bottom: -18px
+
+          &:hover
+            -webkit-text-stroke: 1px #63A1BC
+            color: #63A1BC
+
+        a:hover:before
+          width: 100%
+
+      li.active a:before
+        width: 100%
+
+      li.active > a
+        -webkit-text-stroke: 1px #63A1BC
+        color: #63A1BC
+
+  .row-menu
+    margin-top: 27px
+    align-items: center
+    @media screen and ( max-width: $md2+px )
+      margin-top: 18px
+
+  .btn-menu
+    display: flex
+    justify-content: flex-end
+
+  .burger
+    height: 2.5px
+    width: 35px
+    background: #63A1BC
+    border-radius: 5px
+    position: relative
+    transition: .2s linear
+    @media screen and ( max-width: $md3+px )
+      width: 30px
+      height: 2px
+
+    &:after, &::before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 2.5px
+      right: 0
+      background: #63A1BC
+      transition: .2s linear
+      @media screen and ( max-width: $md3+px )
+        height: 2px
+
+    &:after
+      top: -8px
+
+    &::before
+      top: 8px
+      width: 24px
+      @media screen and ( max-width: $md3+px )
+        width: 20px
+
+  .burger.on
+    background: transparent
+
+    &::after
+      top: 0
+      transform: rotate(45deg)
+
+    &::before
+      top: 0
+      transform: rotate(-45deg)
+      width: 100%
+
+.nav-menu ul.menu li
+
+  .back-btn
+    margin-bottom: 18px
+    display: none
+    @media screen and ( max-width: $md2+px )
+      display: block
+    @media screen and ( max-width: $md3+px )
+      margin-bottom: 30px
+
+    a
+      display: flex
+      align-items: center
+      font-weight: bold
+      font-size: 30px
+      line-height: 46px
+      color: #63A1BC
+      @media screen and ( max-width: $md3+px )
+        font-size: 20px
+
+      img
+        margin-right: 30px
+        @media screen and ( max-width: $md3+px )
+          margin-right: 20px

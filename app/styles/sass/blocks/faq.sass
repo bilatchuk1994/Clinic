@@ -1,0 +1,79 @@
+.faq
+  padding-top: 187px
+  @media screen and ( max-width: $md2+px )
+    padding-top: 162px
+  @media screen and ( max-width: $md4+px )
+    padding-top: 141px
+
+  h4
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 40px
+
+  .faq-content
+    display: none
+    padding: 29px 34px 9px
+    @media screen and ( max-width: $md4+px )
+      padding: 29px 30px 9px
+
+    p
+      text-align: justify
+
+  .faq-item
+    border: 2px solid #63A1BC
+    border-radius: 10px
+    margin-bottom: 50px
+    overflow: hidden
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 40px
+    @media screen and ( max-width: $md4+px )
+      border: 1px solid #63A1BC
+      margin-bottom: 34px
+
+    &:last-child
+      margin-bottom: 0
+
+  .faq-title
+    width: 100%
+    border: 0
+    background: #fff
+    text-align: left
+    display: flex
+    align-items: center
+    position: relative
+    padding: 30px 102px 34px 35px
+    @media screen and ( max-width: $md4+px )
+      padding: 19px 81px 19px 15px
+      height: auto
+
+    h3
+      font-weight: 600
+      font-size: 24px
+      margin-bottom: 0
+      @media screen and ( max-width: $md3+px )
+        font-size: 22px
+      @media screen and ( max-width: $md4+px )
+        font-size: 16px
+        line-height: 18px
+
+  .faq-title.active
+    border-bottom: 2px solid #63A1BC
+
+  .faq-icon
+    position: absolute
+    height: 100%
+    width: 93px
+    border-left: 2px solid #63a1bc
+    right: 0
+    top: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and ( max-width: $md4+px )
+      border-left: 1px solid #63a1bc
+      width: 80px
+
+  .faq-title .faq-icon img
+    transition: .2s linear
+
+  .faq-title.active .faq-icon img
+    transform: rotate(180deg)

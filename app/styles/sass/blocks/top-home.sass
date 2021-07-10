@@ -1,0 +1,109 @@
+.top-home
+  position: relative
+  margin-bottom: -110px
+  @media screen and ( max-width: $md2+px )
+    margin-bottom: -102px
+  @media screen and ( max-width: $md4+px )
+    margin-bottom: -68px
+
+  .slider-control
+    position: absolute
+    top: 137px
+    left: 0
+    @media screen and ( max-width: $md2+px )
+      top: 163px
+      left: 15px
+    @media screen and ( max-width: $md4+px )
+      top: 80px
+
+    .swiper-button-prev, .swiper-button-next
+      border: 1px solid rgba(255, 255, 255, 0.75)
+
+    .swiper-pagination
+
+      &-bullet
+        border: 1px solid rgba(255, 255, 255, 0.75)
+        background: transparent
+
+        &-active
+          background: #FFFFFF
+
+  .top-slide
+    padding: 215px 0 227px
+    @media screen and ( max-width: $md2+px )
+      padding: 237px 0 182px
+    @media screen and ( max-width: $md4+px )
+      padding: 150px 0 146px
+
+    .container
+      width: auto
+
+    h1
+      font-weight: bold
+      font-size: 64px
+      line-height: 69px
+      color: #FFFFFF
+      margin-bottom: 13px
+      @media screen and ( max-width: $md2+px )
+        font-size: 48px
+        line-height: 51px
+        margin-bottom: 6px
+      @media screen and ( max-width: $md3+px )
+        font-size: 32px
+        line-height: 40px
+      @media screen and ( max-width: $md4+px )
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 13px
+
+    p
+      color: rgba(255, 255, 255, 0.75)
+      line-height: 28px
+      max-width: 580px
+      margin-bottom: 52px
+      @media screen and ( max-width: $md2+px )
+        max-width: 720px
+        margin-bottom: 30px
+      @media screen and ( max-width: $md3+px )
+        width: 100%
+        max-width: 100%
+      @media screen and ( max-width: $md4+px )
+        font-size: 16px
+        line-height: 25px
+
+    .group-btn
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      list-style: none
+      flex-wrap: wrap
+      @media screen and ( max-width: $md3+px )
+        flex-direction: column
+        align-items: flex-start
+
+      li:not(:last-child)
+        margin-right: 39px
+        @media screen and ( max-width: $md3+px )
+          margin-bottom: 20px
+          margin-right: 0
+
+    .btn
+      min-width: 292px
+      height: 68px
+      padding: 0
+
+    .btn-v3
+      min-width: 249px
+      border: 1px solid rgba(255, 255, 255, 0.75)
+      background: transparent
+      box-shadow: 0px 0px 0px rgba(255, 202, 189, 0.45)
+      @media screen and ( max-width: $md3+px )
+        min-width: 292px
+
+      &:hover
+        background: #fff
+        color: rgba(0, 0, 0, 0.75)
+
+      &:focus, &:active
+        background: rgba(255, 255, 255, 0.55)
+        color: rgba(0, 0, 0, 0.75)

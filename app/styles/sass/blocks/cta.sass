@@ -1,0 +1,86 @@
+.cta
+  position: relative
+  z-index: 99
+
+  &-img
+    text-align: center
+    margin-bottom: 33px
+
+    img
+      @media screen and ( max-width: $md2+px )
+        width: 262px
+      @media screen and ( max-width: $md4+px )
+        width: 224px
+
+  .row .col-lg-4:last-child .cta-block
+    @media screen and ( max-width: $md2+px )
+      display: flex
+      align-items: center
+      margin: 61px -15px 0
+    @media screen and ( max-width: $md3+px )
+      flex-direction: column
+      margin: 0 -15px
+
+  .row .col-lg-4:last-child .cta-img
+    @media screen and ( max-width: $md2+px )
+      max-width: 50%
+      flex-basis: 50%
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 0
+      padding: 0 15px
+    @media screen and ( max-width: $md3+px )
+      max-width: 100%
+      flex-basis: 100%
+      margin-bottom: 33px
+
+  .row .col-lg-4:last-child .cta-info
+    @media screen and ( max-width: $md2+px )
+      max-width: 50%
+      flex-basis: 50%
+      text-align: center
+      padding: 0 15px
+    @media screen and ( max-width: $md3+px )
+      max-width: 100%
+      flex-basis: 100%
+
+  .row .col-lg-4:last-child .cta-info h3
+    @media screen and ( max-width: $md2+px )
+      height: auto
+      margin-bottom: 0
+    @media screen and ( max-width: $md3+px )
+      height: 72px
+      margin-bottom: 15px
+    @media screen and ( max-width: $md4+px )
+      height: auto
+
+  .row .col-lg-4:last-child .cta-info p
+    @media screen and ( max-width: $md2+px )
+      margin-top: 20px
+    @media screen and ( max-width: $md3+px )
+      margin-top: 0
+
+  &-block
+    @media screen and ( max-width: $md3+px )
+      margin-bottom: 60px
+
+    h3
+      font-size: 30px
+      line-height: 36px
+      text-align: center
+      height: 72px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 15px
+      @media screen and ( max-width: $md4+px )
+        font-size: 20px
+        line-height: 21px
+        height: auto
+
+    p
+      margin-bottom: 0
+      @media screen and ( max-width: $md2+px )
+        text-align: center

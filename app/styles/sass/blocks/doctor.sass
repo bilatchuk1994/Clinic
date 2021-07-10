@@ -8,6 +8,12 @@
     @media screen and ( max-width: $md1+px )
       font-size: 30px
       line-height: 35px
+    @media screen and ( max-width: $md2+px )
+      font-size: 36px
+      line-height: 42px
+    @media screen and ( max-width: $md4+px )
+      font-size: 24px
+      line-height: 31px
 
   h5
     font-size: 18px
@@ -15,13 +21,36 @@
     line-height: 28px
     color: rgba(0, 0, 0, 0.75)
     font-family: "Roboto", sans-serif
-    margin-bottom: 30px
+    margin-bottom: 34px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 29px
+
+  p
+    text-align: justify
+    @media screen and ( max-width: $md2+px )
+      max-width: 460px
+
+  .breadcrums
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 26px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 31px
+
+  &-row
+    @media screen and ( max-width: $md2+px )
+      flex-direction: column-reverse
 
   &-img
     border-radius: 10px
     overflow: hidden
     position: relative
     margin-bottom: 22px
+    @media screen and ( max-width: $md2+px )
+      margin: 0 -20px 22px
+      border-radius: 0
+      height: 633px
+    @media screen and ( max-width: $md4+px )
+      height: 507px
 
     .image
       height: 100%
@@ -40,6 +69,11 @@
       bottom: 34px
       right: 35px
       cursor: pointer
+      @media screen and ( max-width: $md4+px )
+        height: 100px
+        width: 100px
+        right: 21px
+        bottom: 26px
 
       img
         margin-left: 6px
@@ -49,10 +83,21 @@
     align-items: center
     list-style: none
     margin-bottom: 0
+    @media screen and ( max-width: $md2+px )
+      margin-bottom: 30px
+    @media screen and ( max-width: $md4+px )
+      margin-bottom: 38px
 
     li
       &:not(:last-child)
         margin-right: 26px
+        @media screen and ( max-width: $md4+px )
+          margin-right: 22px
 
       a:hover svg path
         fill: #63A1BC
+
+      a svg
+        @media screen and ( max-width: $md4+px )
+          height: 22px
+          width: 22px
